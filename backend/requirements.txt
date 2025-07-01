@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+httpx
+APScheduler
+sqlalchemy
+psycopg2-binary
