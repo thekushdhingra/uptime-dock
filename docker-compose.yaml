@@ -1,13 +1,14 @@
-services:
-  backend:
-    build: ./backend
+version: "3.8"
 
-  frontend:
-    build: ./frontend
+services:
+  uptime-dock:
+    image: kushdhingra/uptime-dock:latest
+    container_name: uptime-dock
     ports:
-      - "3112:3112"
+      - "8000:8000"
+    restart: unless-stopped
     volumes:
-      - ./frontend:/app
-      - /app/node_modules
-    depends_on:
-      - backend
+      - uptime_data:/app/backend
+
+volumes:
+  uptime_data:
