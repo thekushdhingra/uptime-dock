@@ -1,8 +1,6 @@
 services:
   backend:
     build: ./backend
-    networks:
-      - uptime-dock
 
   frontend:
     build: ./frontend
@@ -13,9 +11,3 @@ services:
       - /app/node_modules
     depends_on:
       - backend
-    networks:
-      - uptime-dock
-
-networks:
-  uptime-dock:
-    driver: bridge
