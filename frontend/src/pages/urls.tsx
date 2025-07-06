@@ -78,9 +78,10 @@ export default function URLSPage() {
   const isAllSelected = data.length > 0 && selected.size === data.length;
 
   const toggleAll = () => {
-    setSelected((prev) =>
-      isAllSelected ? new Set() : new Set(data.map((item) => item.id))
-    );
+    setSelected((prev) => {
+      console.log(prev);
+      return isAllSelected ? new Set() : new Set(data.map((item) => item.id));
+    });
   };
 
   const handleDelete = () => {

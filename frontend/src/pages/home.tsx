@@ -12,7 +12,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { ChartBar, ChartBarBig } from "lucide-react";
+import { ChartBarBig } from "lucide-react";
 
 type DashboardStats = {
   total_urls: number;
