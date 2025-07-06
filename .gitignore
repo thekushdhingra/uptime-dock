@@ -22,6 +22,8 @@
 */*.sln
 */*.sw?
 
+*/__pycache__
+
 */venv
 
 .env

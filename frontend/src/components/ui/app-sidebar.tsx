@@ -52,7 +52,7 @@ export function AppSidebar({
                         className={`${
                           window.location.href
                             .toLowerCase()
-                            .endsWith(link.url) && "bg-accent"
+                            .endsWith(link.url) && "bg-accent border-1"
                         }`}
                       >
                         {link.icon}
@@ -69,7 +69,7 @@ export function AppSidebar({
 
       <SidebarFooter className="p-2">
         <SidebarMenuButton
-          className="flex flex-row items-center justify-center"
+          className="flex flex-row items-center justify-center text-center border-1"
           onClick={() => setIsDark((prev) => !prev)}
         >
           {isDark ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}

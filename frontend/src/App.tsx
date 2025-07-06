@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./components/ui/app-sidebar";
-import { ChartBar, Home, Link } from "lucide-react";
+import { Home, Link } from "lucide-react";
 import HomePage from "./pages/home";
 import { Route, Routes } from "react-router";
 import URLSPage from "./pages/urls";
@@ -39,11 +39,6 @@ function App() {
               icon: <Link />,
               label: "Urls",
               url: "/urls",
-            },
-            {
-              icon: <ChartBar />,
-              label: "Analysis",
-              url: "/data",
             },
           ],
         }}

@@ -14,6 +14,8 @@ services:
     build: ./backend
     networks:
       - uptime-dock
+    depends_on:
+      - db
 
   frontend:
     build: ./frontend
@@ -24,6 +26,7 @@ services:
       - /app/node_modules
     depends_on:
       - backend
+      - db
     networks:
       - uptime-dock
 

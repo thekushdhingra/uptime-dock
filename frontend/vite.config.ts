@@ -13,5 +13,12 @@ export default defineConfig({
   server: {
     port: 3112,
     host: "0.0.0.0",
+    proxy: {
+      "/api": {
+        target: "http://backend:8000",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
   },
 });
