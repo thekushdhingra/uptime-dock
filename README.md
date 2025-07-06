@@ -22,3 +22,13 @@
 - **Ping Logic**: Custom scheduler with 30-minute intervals
 
 ---
+
+## Usage Guide
+
+### Make sure you have docker installed!
+
+**Run this**
+
+```
+docker run --name uptime-dock -p 8000:8000 kushdhingra/uptime-dock:latest
+```
