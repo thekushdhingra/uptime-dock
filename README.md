@@ -1,5 +1,7 @@
 # 🚢 Uptime Dock
 
+Time Spent working on this: ![Time from Wakatime](https://hackatime-badge.hackclub.com/U0804SUGQRG/uptime-dock)
+
 **Uptime Dock** is a self-hosted monitoring tool that keeps an eye on your URLs and gives you beautiful, easy-to-read charts so you always know what’s up (literally). It pings your URLs every 30 minutes and lets you track uptime history — all wrapped in a slick UI.
 
 ---
